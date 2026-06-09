@@ -1,0 +1,32 @@
+# Architecture Diagram
+User Input (URL / IP / File)
+│
+▼
+┌─────────────────────┐
+│     Streamlit UI    │
+│  Scan · Results     │
+└──────┬──────────────┘
+│
+┌────┴─────────────────┐
+▼          ▼            ▼
+┌──────────┐ ┌──────────┐ ┌──────────┐
+│VirusTotal│ │AbuseIPDB │ │ URLScan  │
+│URL·IP·File│ │IP Repute │ │URL Scan  │
+└────┬─────┘ └────┬─────┘ └────┬─────┘
+└────────────┼─────────────┘
+▼
+┌────────────────────────┐
+│      Risk Engine       │
+│  Score 0–100           │
+│  Safe/Low/Med/High/Crit│
+└────────────┬───────────┘
+▼
+┌────────────────────────┐
+│     Groq AI Report     │
+│  Summary·Recommends    │
+└────────────┬───────────┘
+▼
+┌────────────────────────┐
+│    Security Report     │
+│  Flags·Score·Summary   │
+└────────────────────────┘

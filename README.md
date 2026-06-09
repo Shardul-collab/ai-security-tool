@@ -52,3 +52,6 @@ streamlit run ui/app.py
 | Suspicious Reputation | +10 |
 
 **Levels:** Safe · Low Risk · Medium Risk · High Risk · Critical
+
+## Architecture
+See [architecture.md](architecture.md)
