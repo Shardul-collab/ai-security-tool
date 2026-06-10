@@ -41,7 +41,7 @@ streamlit run ui/app.py
 | VirusTotal | https://virustotal.com | 500 req/day |
 | AbuseIPDB | https://abuseipdb.com | 1000 req/day |
 | URLScan | https://urlscan.io | 60 req/hour |
-| Gemini | https://aistudio.google.com | Free |
+| Groq | https://console.groq.com/home | various models avilable |
 
 ## Risk Scoring
 | Condition | Score |
